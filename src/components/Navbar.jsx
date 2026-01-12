@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Navbar.module.css'
+import { GrMenu, GrClose } from 'react-icons/gr'
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,9 +19,7 @@ const Navigation = () => {
       </div>
 
       <div className={styles.hamburger} onClick={toggleMenu}>
-        <div className={styles.bar}></div>
-        <div className={styles.bar}></div>
-        <div className={styles.bar}></div>
+        {isOpen ? <GrClose /> : <GrMenu />}
       </div>
     </nav>
   )
