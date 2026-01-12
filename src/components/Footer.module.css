@@ -1,0 +1,162 @@
+.footer {
+  background-color: #2b0246; /* Deep dark slate/black */
+  color: #ffffff;
+  padding: 80px 0 40px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav a {
+  color: #9ca3af; /* Muted grey */
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #9900ff;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ffffff; /* Very subtle line */
+  margin-bottom: 40px;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6b7280; /* Darker grey for secondary info */
+  font-size: 0.95rem;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.copyright a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  color: #ffffff;
+  margin: 0 5px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.socials a {
+  color: #9ca3af;
+  transition: color 0.2s;
+}
+
+.socials a:hover {
+  color: #9900ff;
+}
+
+@media (max-width: 768px) {
+  .topRow, .bottomRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 40px 0;
+  }
+
+  .container {
+    padding: 0 24px; /* Slightly tighter padding for mobile */
+  }
+
+  .topRow {
+    flex-direction: column;
+    align-items: flex-start; /* Aligns everything to the left per screenshot */
+    margin-bottom: 40px;
+    gap: 40px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px; /* Vertical spacing between links */
+  }
+
+  .nav a {
+    font-size: 1.25rem; /* Larger touch targets for mobile */
+  }
+
+  /* Hide the divider on mobile if you want the exact continuous look */
+  .divider {
+    display: none; 
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px; /* Spacing between social icons and legal links */
+  }
+
+  .socials {
+    order: 1; /* Moves social icons above the legal links */
+    gap: 24px;
+    margin-bottom: 8px;
+  }
+
+  .copyright {
+    order: 2; /* Moves legal links and copyright to the bottom */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .separator {
+    display: none; /* Hide the vertical pipe | on mobile */
+  }
+}

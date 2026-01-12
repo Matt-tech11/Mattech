@@ -1,0 +1,406 @@
+.container {
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 4rem 2rem;
+  height: auto;
+  align-items: center;
+  text-align: center;
+   background-image: radial-gradient(#b1b3b7 1px, transparent 1px);
+  background-size: 24px 24px; 
+}
+
+.title {
+  color: #2b0246;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+.description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+.btn {
+  background: linear-gradient(to bottom right, #2b0246, #1e0131);
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+.reasons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 40px;
+  font-family: 'Inter', -apple-system, sans-serif; /* Standard clean tech font */
+}
+
+.left {
+  flex: 1; /* Occupies less space than the image */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Controls spacing between the text blocks */
+}
+
+.h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2b0246;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2b0246;
+  margin-bottom: 12px;
+}
+
+.p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #666666; /* Softer grey for body text */
+  margin: 0;
+}
+
+.right {
+  flex: 1.2; /* Slightly wider than the text column to match screenshot */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* Very subtle rounding */
+  display: block;
+}
+
+/* Responsive adjustment for tablets/mobile */
+@media (max-width: 900px) {
+  .reasons {
+    flex-direction: column;
+    margin: 60px auto;
+  }
+  
+  .h1 {
+    font-size: 2.5rem;
+    color: #2b0246;
+  }
+}
+ 
+
+
+.processSection {
+  padding: 80px 24px;
+  background-color: #ffffff;
+}
+
+.processWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Default for mobile */
+  gap: 48px;
+}
+
+/* LEFT SIDE (The Sticky Header) */
+.processLeft {
+  flex: 1;
+}
+
+.processLeft h1 {
+  color: #2b0246;
+  font-size: 2.5rem; /* Mobile font size */
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -0.03em;
+}
+
+.processLeft p {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* RIGHT SIDE (The Cards) */
+.processRight {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* CARD STYLING */
+.card {
+  padding: 32px;
+  background: #f9f9fb; /* Very light grey background as seen in image */
+  border: 1px solid #f0f0f2; /* Subtle border instead of shadow */
+  border-radius: 12px;
+  font-size: 1.5rem; /* Matches "1. Strategic Planning" size */
+  color: #2b0246;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.card p {
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 1024px) {
+  .processWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 0 40px;
+  }
+
+  .processLeft {
+    position: sticky;
+    top: 120px; /* Sticks the header when scrolling */
+    height: fit-content;
+  }
+
+  .processLeft h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* BUTTON STYLING (To match screenshot) */
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.background {
+  background: #f9f9fb;
+  display: flex;
+  flex-direction: column; /* Stack for mobile by default */
+  padding: 60px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.backgroundProfile {
+  flex: 1;
+}
+
+.backgroundProfile h1 {
+  color: #2b0246;
+  font-size: 2.8rem; 
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.backgroundProfile p {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.backgroundImage {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px; /* Matches subtle rounding */
+  display: block;
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 1024px) {
+  .background {
+    flex-direction: row; /* Side-by-side for desktop */
+    align-items: center; /* Vertically center text and image */
+    padding: 100px 40px;
+    gap: 80px; /* Generous space between text and image */
+  }
+
+  .backgroundProfile h1 {
+    font-size: 4.5rem; /* Larger for desktop impact */
+  }
+  
+  .backgroundImage {
+    flex: 1.2; /* Image column is slightly wider than text */
+  }
+}
+
+
+/* CONTACT SECTION */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  /* Subtle dot grid background */
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.contactWrapper {
+  background-color: #f9f9fb;
+  padding: 48px 24px;
+  border-radius: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Constrains width for the mobile "card" look */
+}
+
+.contactWrapper h1 {
+  font-size: 2.25rem; /* Large and impactful for mobile */
+  font-weight: 700;
+  color: #2b0246;
+  margin-bottom: 16px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.contactWrapper p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #4b5563; /* Muted grey */
+  margin-bottom: 32px;
+}
+
+.btn {
+  background-color: #262626;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px; /* Soft squared-off corners as seen in mobile */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  background-color: #000000;
+  transform: scale(0.98);
+}
+
+/* Tablet and Desktop scaling */
+@media (min-width: 768px) {
+  .contactWrapper {
+    max-width: 900px;
+    padding: 100px 40px;
+  }
+  
+  .contactWrapper h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media (max-width: 992px) {
+  .reasons {
+    padding: 3rem 3rem;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .reasons {
+    flex-direction: column;
+    text-align: left;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .left {
+    order: 1;
+  }
+
+  .right {
+    order: 2;
+  }
+
+  .image {
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin: 1rem auto 2rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
