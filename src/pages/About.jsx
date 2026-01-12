@@ -20,7 +20,7 @@ function About() {
             I team up with tech founders and marketers to help them relaunch their business site
           </p>
           <button
-            onClick={() => navigate('/project')}
+            onClick={() => navigate('/requestproject')}
             className={styles.btn}
           >
             Request a project →
@@ -65,7 +65,7 @@ function About() {
               Over the years, I helped dozens of tech brands grow,
               refining my process with each project.
             </p><br></br>
-            <button onClick={() => navigate('/project')} className={styles.btn}>
+            <button onClick={() => navigate('/requestproject')} className={styles.btn}>
               Request a project →
             </button>
           </div>
@@ -113,7 +113,7 @@ function About() {
         <div className={styles.contactWrapper}>
           <h1>Ready For Your New Site ?</h1>
           <p>Let's discuss your project and see how I can help bring your vision to life.</p>
-          <button onClick={() => navigate('/project')} className={styles.btn}>
+          <button onClick={() => navigate('/requestproject')} className={styles.btn}>
             Request a project →
           </button>
         </div>
