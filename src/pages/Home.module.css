@@ -148,6 +148,7 @@
   line-height: 1.6;
 }
 
+
 .grid {
   width: 80%;
   margin: 0 auto;
@@ -155,6 +156,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   margin-top: 2rem;
+  perspective: 1000px; 
 }
 
 .card {
@@ -165,8 +167,24 @@
   background: #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  transform: translateY(0);
+  animation: slideIn linear forwards;
+  animation-timeline: view();
+  animation-range: entry 5% cover 30%; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px) rotateX(-10deg) scale(0.9);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 .card img {
@@ -176,60 +194,27 @@
 }
 
 .card:hover {
+
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-/* Title overlay */
-.others {
-  position: absolute;
-  bottom: 1.2rem;
-  left: 1.2rem;
-  color: #2b0246;
-  font-size: 1.15rem;
-  font-weight: 500;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-}
-
-/* Blurred card */
-.blurred img {
-  filter: blur(0px) brightness(1);
-  opacity: 1;
-  transition: 0.4s ease;
-}
-
-.blurred:hover img {
-  filter: blur(6px) brightness(0.9);
-  opacity: 0.75;
-}
 
 
-/* Mobile responsiveness */
+
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
-  .head {
-    font-size: 2.3rem;
+  
+  
+  @media (prefers-reduced-motion: reduce) {
+    .card {
+      animation: none;
+    }
   }
 }
-
-@media (max-width: 600px) {
-  .portfolioContainer {
-    padding: 80px 0;
-  }
-
-  .subhead {
-    font-size: 1.1rem;
-  }
-}
-
-
-
-
-
 
 .faqSection {
   max-width: 800px;

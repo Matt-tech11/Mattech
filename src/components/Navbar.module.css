@@ -49,11 +49,6 @@
   box-sizing: border-box;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #2b0246;
-}
 
 /* RESPONSIVE SECTION */
 @media (max-width: 768px) {
