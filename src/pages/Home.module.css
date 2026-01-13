@@ -206,12 +206,13 @@
   .grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    width: 90%;
   }
   
   
   @media (prefers-reduced-motion: reduce) {
     .card {
-      animation: none;
+      animation: entry 5% cover 30%;
     }
   }
 }
