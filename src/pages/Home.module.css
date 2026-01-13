@@ -210,11 +210,10 @@
   }
   
   
-  @media (prefers-reduced-motion: reduce) {
+
     .card {
       animation: entry 5% cover 30%;
     }
-  }
 }
 
 .faqSection {
