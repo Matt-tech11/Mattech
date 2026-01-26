@@ -1,17 +1,15 @@
-/* CONTAINER & LAYOUT */
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 100px 80px;
-  background-color: #f3f3f4; /* Subtle light grey background */
+  background-color: #f3f3f4;
   gap: 60px;
-  min-height: auto; /* Fixes the overlap by allowing content to define height */
+  min-height: auto; 
   align-items: start;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* LEFT SIDE: TEXT CONTENT */
 .left {
   padding-top: 20px;
 }
@@ -27,7 +25,7 @@
 }
 
 .title {
-  font-size: 4rem; /* Bold, large impact as seen in screenshots */
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.1;
   color: #2b0246;
@@ -47,7 +45,7 @@
   background: #ffffff;
   padding: 48px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Soft, modern shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
 }
 
 .form {
@@ -134,7 +132,7 @@
 }
 
 .submit {
-  align-self: flex-start; /* Aligns with the professional "button" style */
+  align-self: flex-start; 
   background: #2b0246;
   color: #ffffff;
   border: none;
@@ -178,24 +176,24 @@
   }
 
   .submit {
-    width: 100%; /* Better UX for mobile thumbs */
+    width: 100%; 
   }
 }
 
-/* ... Keep all your existing CSS ... */
+
 
 /* SUCCESS STATE STYLING */
 .successWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px; /* Provides consistent height with the form */
+  min-height: 400px;
   text-align: center;
   animation: fadeIn 0.5s ease-out;
 }
 
 .successTitle {
-  font-size: 2.5rem; /* Large, clean text as seen in screenshot */
+  font-size: 2.5rem; 
   font-weight: 600;
   color: #2b0246;
   letter-spacing: -0.02em;

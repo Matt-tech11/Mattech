@@ -4,13 +4,12 @@ import emailjs from "@emailjs/browser";
 import {useRef} from 'react';
 
 export default function Project() {
-  const contact = useRef(); // This will now be attached to the form
+  const contact = useRef(); 
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // The 'contact.current' now correctly points to the <form>
     emailjs.sendForm(
       "service_9yqclrj", 
       "template_sujbfhc", 
@@ -27,7 +26,6 @@ export default function Project() {
 
   return (
     <section className={styles.contact}>
-      {/* Left content - Removed the ref and onSubmit from here */}
       <div className={styles.left}>
         <span className={styles.tag}>[ CONTACT ]</span>
         <h1 className={styles.title}>
@@ -40,11 +38,10 @@ export default function Project() {
 
       <div className={styles.right}>
         {!submitted ? (
-          /* ATTACH REF HERE */
           <form ref={contact} className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.field}>
               <label>Full name</label>
-              {/* ADDED name="user_name" (or whatever matches your EmailJS template) */}
+            
               <input type="text" name="from_name" required />
             </div>
 
