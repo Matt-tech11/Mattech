@@ -6,7 +6,7 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "Web design & Devlopment",
+      title: "Web design & Development",
       img: "/img6.JPG",
       blurred: true,
     },
@@ -24,7 +24,7 @@ export default function Home() {
     },
     {
       id: 4,
-      title: "Web & App Remodelling",
+      title: "Web & App Remodeling",
       img: "/img4.JPG",
       blurred: true,
     },

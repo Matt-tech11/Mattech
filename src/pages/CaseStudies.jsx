@@ -21,7 +21,7 @@ const caseStudies = [
   },
   {
     id: 4,
-    title: "Web & App Remodelling",
+    title: "Web & App Remodeling",
     img: "/img4.JPG",
     blurred: true,
   },

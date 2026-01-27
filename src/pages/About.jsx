@@ -62,7 +62,7 @@ function About() {
           <div className={styles.processLeft}>
             <h1>Design and development process</h1><br></br>
             <p>
-              Over the years, I helped dozens of tech brands grow,
+              Over the years, I helped tech brands grow,
               refining my process with each project.
             </p><br></br>
             <button onClick={() => navigate('/requestproject')} className={styles.btn}>
@@ -70,7 +70,6 @@ function About() {
             </button>
           </div>
 
-          {/* RIGHT — SCROLLING */}
           <div className={styles.processRight}>
             <div className={styles.card}>
               <h3>1. Strategic Planning</h3>
@@ -100,8 +99,8 @@ function About() {
       <section className={styles.background}>
         <div className={styles.backgroundProfile}>
         <h1> My Background </h1>
-        <p>I’ve been active in the creative industry for over a decade, following my creative passion and exploring many directions, involving video production, studying Creative Technology, and co-founding a marketing agency.
-        Only after going all-in on web design, and specializing in creating mobile applications & websites for tech companies, I found the one thing that I can truly obsess about.</p>
+        <p>I've spent my career at the intersection of innovation and technology and public impact.
+          With optimizing systems during my time at the intersection of innovation and technology and public impact in Accra  to teaming up with fast-paced tech companies, I focus on making data work for people. Solving problems and believing in the power of technology is born when scientific rigor meets collaborative, real world execution.</p>
         </div>
         <div className={styles.backgroundImage}>
           <img src="/img3.jpg" alt="About" className={styles.image} />
